@@ -1,0 +1,26 @@
+<div>
+  <label>CEP</label>
+  <input
+    type="text"
+    mask="00000-000"
+    (input)="getCep($event.target.value)"
+    placeholder="03389-070"
+  />
+</div>
+
+<div>
+  <label>Rua</label>
+  <input type="text" [value]="streetName"/>
+</div>
+
+<div>
+  <label>complemento</label>
+  <input type="text" [value]="complement"/>
+</div>
+
+<div>
+  <label>Número</label>
+  <input type="text"/>
+</div>
+
+
